@@ -25,6 +25,20 @@
   color: #ffb03b;
 }
 
+#events{
+  min-height: 90vh;
+  padding: 5% 10%;
+  background: linear-gradient(
+      0deg,
+      rgba(18, 20, 20, 0.5),
+      rgba(36, 40, 43, 0.5)
+    ),
+    url(./images/gallery9.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
 #chefs {
   min-height: 90vh;
   padding: 5% 10%;
