@@ -5,10 +5,35 @@
   box-sizing: border-box;
 }
 
+#specials {
+  background-color: #fffaf3;
+}
+.nav-pills .nav-link.active {
+  color: white;
+  background-color: #ffb03b;
+}
 
-.tab-content>.active {
-    display: block;
+.special-list {
+  border-right: 3px solid #ffb03b;
 }
-.tab-content>.tab-pane {
-    display: none;
+
+.nav-link {
+  color: black;
 }
+
+.nav-link:hover {
+  color: #ffb03b;
+}
+
+#chefs {
+  min-height: 90vh;
+  padding: 5% 10%;
+  background: linear-gradient(
+      0deg,
+      rgba(123, 167, 164, 0.5),
+      rgba(192, 204, 212, 0.5)
+    ),
+    url(./images/chefsbg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
