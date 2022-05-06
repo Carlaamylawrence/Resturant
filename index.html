@@ -15,7 +15,24 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
 
@@ -71,6 +88,129 @@
       </div>
     </section>
     <!-- Landing -->
+    <section id="landing" class="landing">
+      <div class="container-fluid">
+        <div
+          id="landingcarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#landingcarousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#landingcarousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#landingcarousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./images/landing1.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h2>Lorem ipsum dolor sit amet</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laboriosam recusandae, cupiditate ipsa in ducimus eaque odit
+                  explicabo impedit excepturi rerum. Aliquid, quo.
+                </p>
+                <a href="#menu"
+                  ><button type="button" class="btn btn-outline-warning">
+                    Our Menu
+                  </button></a
+                >
+                <a href="#book-a-table"
+                  ><button type="button" class="btn btn-outline-warning">
+                    Book A Table
+                  </button></a
+                >
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/landing2.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h2>Lorem ipsum dolor sit amet</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laboriosam recusandae, cupiditate ipsa in ducimus eaque odit
+                  explicabo impedit excepturi rerum. Aliquid, quo.
+                </p>
+                <a href="#menu"
+                  ><button type="button" class="btn btn-outline-warning">
+                    Our Menu
+                  </button></a
+                >
+                <a href="#book-a-table"
+                  ><button type="button" class="btn btn-outline-warning">
+                    Book A Table
+                  </button></a
+                >
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/landing3.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h2>Lorem ipsum dolor sit amet</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laboriosam recusandae, cupiditate ipsa in ducimus eaque odit
+                  explicabo impedit excepturi rerum. Aliquid, quo.
+                </p>
+                <a href="#menu"
+                  ><button type="button" class="btn btn-outline-warning">
+                    Our Menu
+                  </button></a
+                >
+                <a href="#book-a-table"
+                  ><button type="button" class="btn btn-outline-warning">
+                    Book A Table
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#landingcarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#landingcarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
 
     <main id="main">
       <!-- ABOUT -->
@@ -126,10 +266,22 @@
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. In fugiat
             reiciendis quia.
           </p>
-          <div class="row">
-            <div class="col-md-4 bg-white shadow p-5"></div>
-            <div class="col-md-4 bg-white shadow p-5"></div>
-            <div class="col-md-4 bg-white shadow p-5"></div>
+          <div class="row d-flex flex-wrap">
+            <div class="col-md-4 bg-white shadow p-5 text-center">
+              <span>1</span>
+              <h4>reason</h4>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+            <div class="col-md-4 bg-white shadow p-5 text-center">
+              <span>1</span>
+              <h4>reason</h4>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+            <div class="col-md-4 bg-white shadow p-5 text-center">
+              <span>1</span>
+              <h4>reason</h4>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -712,7 +864,6 @@
                 />
               </div>
             </div>
-        
           </div>
         </div>
       </section>
@@ -728,15 +879,176 @@
             </p>
           </div>
           <div class="row">
-            <div class="col-lg-4 col-md-6"><div class="chef"><div class="chef-pic"><img src="./images/chef1.jpg" style="width: 200px; height: 300px;" alt="james"></div><div class="chef-info"><h4>Walter Pitt</h4><span>Chef</span><div class="chef-socias p-3"><a href=""><i class="bi bi-instagram"></i></a><a href=""><i class="bi bi-twitter"></i></a><a href=""><i class="bi bi-linkedin"></i></a><a href=""><i class="bi bi-facebook"></i></a></div></div></div></div>
-            <div class="col-lg-4 col-md-6"><div class="chef"><div class="chef-pic"><img src="./images/chef2.jpg" style="width: 200px; height: 300px;" alt="edna"></div><div class="chef-info"><h4>Walter Pitt</h4><span>Chef</span><div class="chef-socials p-3"><a href=""><i class="bi bi-instagram"></i></a><a href=""><i class="bi bi-twitter"></i></a><a href=""><i class="bi bi-linkedin"></i></a><a href=""><i class="bi bi-facebook"></i></a></div></div></div></div>
-            <div class="col-lg-4 col-md-6"><div class="chef"><div class="chef-pic"><img src="./images/chef3.jpg" style="width: 200px; height: 300px;" alt="jace"></div><div class="chef-info"><h4>Walter Pitt</h4><span>Chef</span><div class="chef-socials p-3"><a href=""><i class="bi bi-instagram"></i></a><a href=""><i class="bi bi-twitter"></i></a><a href=""><i class="bi bi-linkedin"></i></a><a href=""><i class="bi bi-facebook"></i></a></div></div></div></div>
+            <div class="col-lg-4 col-md-6">
+              <div class="chef">
+                <div class="chef-pic">
+                  <img
+                    src="./images/chef1.jpg"
+                    style="width: 200px; height: 300px"
+                    alt="james"
+                  />
+                </div>
+                <div class="chef-info">
+                  <h4>Walter Pitt</h4>
+                  <span>Chef</span>
+                  <div class="chef-socias p-3">
+                    <a href=""><i class="bi bi-instagram"></i></a
+                    ><a href=""><i class="bi bi-twitter"></i></a
+                    ><a href=""><i class="bi bi-linkedin"></i></a
+                    ><a href=""><i class="bi bi-facebook"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="chef">
+                <div class="chef-pic">
+                  <img
+                    src="./images/chef2.jpg"
+                    style="width: 200px; height: 300px"
+                    alt="edna"
+                  />
+                </div>
+                <div class="chef-info">
+                  <h4>Walter Pitt</h4>
+                  <span>Chef</span>
+                  <div class="chef-socials p-3">
+                    <a href=""><i class="bi bi-instagram"></i></a
+                    ><a href=""><i class="bi bi-twitter"></i></a
+                    ><a href=""><i class="bi bi-linkedin"></i></a
+                    ><a href=""><i class="bi bi-facebook"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="chef">
+                <div class="chef-pic">
+                  <img
+                    src="./images/chef3.jpg"
+                    style="width: 200px; height: 300px"
+                    alt="jace"
+                  />
+                </div>
+                <div class="chef-info">
+                  <h4>Walter Pitt</h4>
+                  <span>Chef</span>
+                  <div class="chef-socials p-3">
+                    <a href=""><i class="bi bi-instagram"></i></a
+                    ><a href=""><i class="bi bi-twitter"></i></a
+                    ><a href=""><i class="bi bi-linkedin"></i></a
+                    ><a href=""><i class="bi bi-facebook"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="testimonials" class="testimonials"></section>
-      <div class="container-fluid"></div>
+      <!-- TESTIMONIALS -->
+      <section id="testimonials" class="container bg-white shadow-sm mt-3 p-5 text-center">
+      <div id="testimonialslider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#testimonialslider" data-bs-slide-to="0" class="primary active rounded-circle" style="width: 20px; height: 20px;" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#testimonialslider" data-bs-slide-to="1" class="rounded-circle" style="width: 20px; height: 20px;" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#testimonialslider" data-bs-slide-to="2" class="rounded-circle" style="width: 20px; height: 20px;" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#testimonialslider" data-bs-slide-to="3" class="rounded-circle" style="width: 20px; height: 20px;" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#testimonialslider" data-bs-slide-to="4" class="rounded-circle" style="width: 20px; height: 20px;" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item pb-5 text-center active text-white">
+           <img src="./images/test1.jpg" class="rounded-circle img-fluid" style="width: 200px; height: 200px" alt="testpic3"/>
+            <h5 class="fst-italic">Full Name</h5>
+            <p>occupation</p>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <p><i class="bi bi-quote"></i></i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, iusto dolor? Quo<i class="bi bi-quote"></i></p>
+          </div>
+          <div class="carousel-item pb-5 text-center text-white">
+            <img src="./images/test2.jpg" class="rounded-circle img-fluid" style="width: 200px; height: 200px" alt="testpic2"/>
+            <h5 class="fst-italic">Full Name</h5>
+            <p>occupation</p>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <p><i class="bi bi-quote"></i></i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, iusto dolor? Quo<i class="bi bi-quote"></i></p>
+          </div>
+         <div class="carousel-item pb-5 text-center text-white">
+            <img src="./images/test3.jpg" class="rounded-circle img-fluid" style="width: 200px; height: 200px;" alt="testpic3"/>
+            <h5 class="fst-italic">Full Name</h5>
+            <p>occupation</p>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <p><i class="bi bi-quote"></i></i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, iusto dolor? Quo<i class="bi bi-quote"></i></p>
+          </div>
+          <div class="carousel-item pb-5 text-center text-white">
+            <img src="./images/test4.jpg" class="rounded-circle img-fluid" style="width: 200px; height: 200px;" alt="testpic4"/>
+            <h5 class="fst-italic">Full Name</h5>
+            <p>occupation</p>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <p><i class="bi bi-quote"></i></i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, iusto dolor? Quo<i class="bi bi-quote"></i></p>
+          </div>
+          <div class="carousel-item pb-5 text-center text-white">
+            <img src="./images/test5.jpg" class="rounded-circle img-fluid" style="width: 200px; height: 200px;" alt="testpic5"/>
+            <h5 class="fst-italic">Full Name</h5>
+            <p>occupation</p>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <p><i class="bi bi-quote"></i></i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, iusto dolor? Quo<i class="bi bi-quote"></i></p>
+          </div>
+        </div>
+      </div>
+     </div>
+    </div>
+  
+  </section>
+
+
+
+      <section>
+        <div class="container">
+          <div class="owl-carousel">
+            <div class="p-3">
+              <div class="bg-dark text-white p-3">1</div>
+            </div>
+            <div class="p-3">
+              <div class="bg-dark text-white p-3">2</div>
+            </div>
+            <div class="p-3">
+              <div class="bg-dark text-white p-3">3</div>
+            </div>
+            <div class="p-3">
+              <div class="bg-dark text-white p-3">4</div>
+            </div>
+            <div class="p-3">
+              <div class="bg-dark text-white p-3">5</div>
+            </div>
+            <div class="p-3">
+              <div class="bg-dark text-white p-3">6</div>
+            </div>
+            <div class="p-3">
+              <div class="bg-dark text-white p-3">7</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="contact" class="contact"></section>
       <div class="container-fluid"></div>
     </main>
@@ -744,9 +1056,29 @@
     <div class="container"></div>
 
     <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          autoplay: true,
+          items: 4,
+          loop: true,
+        });
+      });
+    </script>
   </body>
 </html>
