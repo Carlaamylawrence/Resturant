@@ -43,7 +43,7 @@
       class="d-flex align-items-center topbar-transparent mb-5"
     >
       <div
-        class="container-xl d-flex justify-content-center align-items-center justify-content-lg-start"
+        class="container-xl d-flex justify-content-center align-items-center "
       >
         <i class="fa-solid fa-mobile-screen-button"></i
         ><span>021 761 2540</span> <i class="fa-solid fa-clock"></i
@@ -52,40 +52,55 @@
     </header>
 
     <!-- NAVBAR -->
-    <section
-      id="header"
-      class="d-flex align-items-center header-transparent mb-5"
-    >
-      <div
-        class="container-xl d-flex align-items-center justify-content-between"
-      >
-        <nav class="navbar navbar-expand-lg navbar-light navbar-transparent">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">Delicious</a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarcontent"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarcontent">
-              <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                <a class="nav-link" href="#about">About</a>
-                <a class="nav-link" href="#menu">Menu</a>
-                <a class="nav-link" href="#specials">Specials</a>
-                <a class="nav-link" href="#events">Events</a>
-                <a class="nav-link" href="#chefs">Chefs</a>
-                <a class="nav-link" href="#gallery">Gallery</a>
-                <a class="nav-link" href="#contact">Contact</a>
-                <a class="button">Book a table</a>
-              </div>
-            </div>
+    <section id="nav">
+      <nav class="navbar navbar-expand-lg text-light bg-dark d-flex justify-content-between ">
+        <div class="container-fluid d-flex justify-content-evenly">
+          <a class="navbar-brand" href="#">Delicious</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="topnav-link active" aria-current="page" href="#landing">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="topnav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="topnav-link" href="#menu">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="topnav-link" href="#specials">Specials</a>
+              </li>
+              <li class="nav-item">
+                <a class="topnav-link" href="#events">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="topnav-link" href="#chefs">Chefs</a>
+              </li>
+              <li class="nav-item">
+                <a class="topnav-link" href="#gallery">Gallery</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="topnav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="topnav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
           </div>
-        </nav>
-      </div>
+          <a href="#book-a-table" button class="btn btn-sm btn-outline-warning" type="button">Book a table</button></a>
+        </div>
+      </nav>
+
     </section>
     <!-- Landing -->
     <section id="landing" class="landing">
@@ -783,7 +798,7 @@
       </section>
       <!-- GALLERY -->
       <section id="gallery" class="gallery">
-        <div class="container">
+        <div class="container-fluid">
           <div class="section-title text-center">
             <h3>Some Photos of our Resturant</h3>
             <p>
@@ -791,9 +806,9 @@
               Temporibus eum mollitia magnam.
             </p>
           </div>
-          <div class="row d-flex flex-wrap">
-            <div class="col-lg-3 col-md-4">
-              <div class="gallerypics" style="max-width: 300px">
+          <div class="row d-flex flex-wrap g-o">
+            <div class="col-lg-3 col-md-4 ">
+              <div class="gallerypics" >
                 <img
                   src="./images/gallery1.jpg"
                   class="img-fluid"
@@ -891,7 +906,7 @@
                 <div class="chef-info">
                   <h4>Walter Pitt</h4>
                   <span>Chef</span>
-                  <div class="chef-socias p-3">
+                  <div class="chef-socials p-3">
                     <a href=""><i class="bi bi-instagram"></i></a
                     ><a href=""><i class="bi bi-twitter"></i></a
                     ><a href=""><i class="bi bi-linkedin"></i></a
@@ -947,7 +962,7 @@
       </section>
 
       <!-- TESTIMONIALS -->
-      <section id="testimonials" class="container bg-white shadow-sm mt-3 p-5 text-center">
+      <section id="testimonials" class="container-fluid bg-white shadow-sm  p-5 text-center">
       <div id="testimonialslider" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#testimonialslider" data-bs-slide-to="0" class="primary active rounded-circle" style="width: 20px; height: 20px;" aria-current="true" aria-label="Slide 1"></button>
@@ -1019,9 +1034,7 @@
   
       </section>
 
-
-
-      
+      <!-- contact -->
     <section id="contact" class="contact">
       <div class="container">
         <div class="section-title text-center">
@@ -1113,13 +1126,23 @@
     </section>
     
     </main>
+    <!-- footer -->
     <footer id="footer">
-      <div class="container">
+      <div class="container-fluid d-flex flex-column align-items-center bg-black text-light p-3">
         <h3>Delicious</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt quae perferendis!</p>
-        <div class="social-links"></div>
-        <div class="copyright"></div>
-        <div class="credits"></div>
+        <div class="social-links">
+          <a href=""><i class="bi bi-instagram p-3"></i></a
+            ><a href=""><i class="bi bi-twitter p-3"></i></a
+            ><a href=""><i class="bi bi-linkedin p-3"></i></a
+            ><a href=""><i class="bi bi-facebook p-3"></i></a>
+        </div>
+        <div class="copyright">
+          <p>© Copyright <b><span>Delicious</span></b> All rights reserved</p>
+        </div>
+        <div class="credits">
+          <p>Designed by Carla Lawrence</p>
+        </div>
       </div>
 
     </footer>
